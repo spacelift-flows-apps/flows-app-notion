@@ -1,9 +1,6 @@
-import { defineApp, http, kv, lifecycle } from "@slflows/sdk/v1";
-import { blocks } from "./blocks/index";
-import {
-  verifyNotionWebhook,
-  handleWebhookEndpoint,
-} from "./utils/httpHandlerHelpers";
+import {defineApp, http, kv, lifecycle, SignalSensitivity} from "@slflows/sdk/v1";
+import {blocks} from "./blocks/index";
+import {handleWebhookEndpoint, verifyNotionWebhook,} from "./utils/httpHandlerHelpers";
 
 const WEBHOOK_TOKEN_KV_KEY = "webhook_verification_token";
 
@@ -39,7 +36,7 @@ To install:
     webhookVerificationToken: {
       name: "Webhook Verification Token",
       sensitive: true,
-      sensitivity: "hide_by_default",
+      sensitivity: SignalSensitivity.HideByDefault,
       description:
         "The verification token received from Notion. Copy this and paste it into Notion's webhook verification UI.",
     },
