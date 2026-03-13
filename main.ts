@@ -3,7 +3,6 @@ import {
   http,
   kv,
   lifecycle,
-  SignalSensitivity,
 } from "@slflows/sdk/v1";
 import { blocks } from "./blocks/index";
 import {
