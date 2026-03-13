@@ -1,9 +1,4 @@
-import {
-  defineApp,
-  http,
-  kv,
-  lifecycle,
-} from "@slflows/sdk/v1";
+import { defineApp, http, kv, lifecycle } from "@slflows/sdk/v1";
 import { blocks } from "./blocks/index";
 import {
   handleWebhookEndpoint,
