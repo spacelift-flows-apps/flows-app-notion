@@ -15,6 +15,7 @@ export const commentSubscription: AppBlock = {
   description:
     "Subscribes to Notion comment webhook events (created, updated, deleted)",
   category: "Webhooks",
+  entrypoint: true,
 
   config: {
     eventTypes: {
