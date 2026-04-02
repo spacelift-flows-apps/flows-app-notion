@@ -20,6 +20,7 @@ export const dataSourceSubscription: AppBlock = {
   description:
     "Subscribes to Notion data source webhook events (created, updated, deleted, moved, schema changes, etc.). New in API version 2025-09-03.",
   category: "Webhooks",
+  entrypoint: true,
 
   config: {
     eventTypes: {

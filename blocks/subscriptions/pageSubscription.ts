@@ -20,6 +20,7 @@ export const pageSubscription: AppBlock = {
   description:
     "Subscribes to Notion page webhook events (created, updated, deleted, moved, locked, unlocked, etc.)",
   category: "Webhooks",
+  entrypoint: true,
 
   config: {
     eventTypes: {

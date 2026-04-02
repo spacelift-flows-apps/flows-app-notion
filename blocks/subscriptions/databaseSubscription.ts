@@ -21,6 +21,7 @@ export const databaseSubscription: AppBlock = {
   description:
     "Subscribes to Notion database webhook events (created, updated, deleted, moved, schema changes, etc.). Note: Deprecated in API version 2025-09-03, use Data Source events instead.",
   category: "Webhooks",
+  entrypoint: true,
 
   config: {
     eventTypes: {
